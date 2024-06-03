@@ -34,7 +34,6 @@ public class PullingJump : MonoBehaviour
             rb.velocity = dist.normalized * jumpPower;
         }
     }
-
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("è’ìÀÇµÇΩ");
