@@ -5,12 +5,13 @@ using UnityEngine;
 public class ltem : MonoBehaviour
 {
 
+    private Animator animator;
+
 
     private void OnTriggerEnter(Collider other)
     {
         // ê⁄êGÇµÇΩèuä‘Ç…åƒÇŒÇÍÇÈ
-        DestroySelf();
-        //Debug.Log("Enter");
+        animator.SetTrigger("Get");
     }
 
     private void DestroySelf()
@@ -34,7 +35,7 @@ public class ltem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
