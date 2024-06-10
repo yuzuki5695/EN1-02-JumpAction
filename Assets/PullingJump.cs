@@ -51,7 +51,7 @@ public class PullingJump : MonoBehaviour
         // 上方向と法線の内積。2つのベクトルはともに長さが1なので、cos0の結果がdotUN変数に入る。
         float dotUN = Vector3.Dot(upVector, otherNormal);
         // 内積値に逆三角形関数arccosを掛けて角度を算出。それを度数法へ変換する。これで角度が算出できた。
-        float dotDeg = Mathf.Acos(dotUN) * Mathf.Deg2Rad;
+        float dotDeg = Mathf.Acos(dotUN) * Mathf.Rad2Deg;
         // 二つのベクトルがなす角度が45度より小さければ再びジャンプ可能とする。
         if(dotDeg <= 45)
         {
