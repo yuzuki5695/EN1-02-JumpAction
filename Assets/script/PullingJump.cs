@@ -10,11 +10,13 @@ public class PullingJump : MonoBehaviour
     private float jumpPower = 10;
     private bool isCanJump;
     // Start is called before the first frame update
+    private AudioSource audioSource;
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
         Physics.gravity = new Vector3(0, -9.8f, 0);
         // rb = GetComponent<Rigidbody>(); //gameObjectは省略可能
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,6 +34,8 @@ public class PullingJump : MonoBehaviour
             if(dist.sqrMagnitude == 0) { return; }
             // 差分を標準化し、jumpPowerをかけ合わせた値を移動量とする。
             rb.velocity = dist.normalized * jumpPower;
+
+            audioSource.Play();
         }
     }
     private void OnCollisionEnter(Collision collision)
