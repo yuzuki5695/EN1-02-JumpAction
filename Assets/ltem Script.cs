@@ -6,7 +6,7 @@ public class ltem : MonoBehaviour
 {
 
     private Animator animator;
-
+    private AudioSource audioSource;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -36,11 +36,13 @@ public class ltem : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        audioSource.Play();
     }
 }
