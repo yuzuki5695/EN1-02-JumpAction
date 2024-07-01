@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -1360575715497916788}
   - component: {fileID: -2957630171481287939}
   - component: {fileID: 2707599637690238604}
+  - component: {fileID: -5169403266701830838}
   m_Layer: 0
   m_Name: ltemObject
   m_TagString: Untagged
@@ -109,3 +110,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ffd52ee5091c94f859efffc09aeadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &-5169403266701830838
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438383582720385904}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}

@@ -1105,6 +1105,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLayer
       objectReference: {fileID: 0}
+    - target: {fileID: 8596048829976606982, guid: ef0cf0f34bee54d4a94e25b0e17bcf78, type: 3}
+      propertyPath: jumpPower
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

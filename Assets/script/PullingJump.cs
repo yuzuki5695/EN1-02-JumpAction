@@ -7,14 +7,14 @@ public class PullingJump : MonoBehaviour
     private Rigidbody rb;
     private Vector3 clickPosition;
     [SerializeField]
-    private float jumpPower = 10;
+    private float jumpPower = 25;
     private bool isCanJump;
     // Start is called before the first frame update
     private AudioSource audioSource;
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
-        Physics.gravity = new Vector3(0, -9.8f, 0);
+        Physics.gravity = new Vector3(0, -12.0f, 0);
         // rb = GetComponent<Rigidbody>(); //gameObjectÇÕè»ó™â¬î\
         audioSource = gameObject.GetComponent<AudioSource>();
     }
