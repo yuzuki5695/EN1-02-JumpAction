@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class AutoMoveScript : MonoBehaviour
 {
-    private float MoveSpeed = 3.0f;
+
+    [SerializeField] private Transform Position;
+
+    private float MoveSpeed = 2.0f;
+    
+
     void FixedUpdate()
     {
-        transform.position = new Vector3(0,Mathf.Sin(Time.time) * MoveSpeed, 0);
+        transform.position = new Vector3(transform.position.x, 8 + Mathf.Cos(Time.time) * MoveSpeed, transform.position.z);
     }
+
 }

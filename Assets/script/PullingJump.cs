@@ -7,7 +7,7 @@ public class PullingJump : MonoBehaviour
     private Rigidbody rb;
     private Vector3 clickPosition;
     [SerializeField]
-    private float jumpPower = 25;
+    private float jumpPower = 50;
     private bool isCanJump;
     // Start is called before the first frame update
     private AudioSource audioSource;
