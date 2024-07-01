@@ -864,7 +864,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9fcc5e1fb2223f54b95a22a607531af2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1618,10 +1618,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1150269570985433954, guid: 33418707347841a408180dcdf27b9b8b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 525334162160479511, guid: 33418707347841a408180dcdf27b9b8b, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: d0879d71b6646124ea01e72ff743defa, type: 2}
+    - target: {fileID: 525334162160479511, guid: 33418707347841a408180dcdf27b9b8b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1458092620761824939, guid: 33418707347841a408180dcdf27b9b8b, type: 3}
       propertyPath: m_Name
       value: 'ltemObject '
